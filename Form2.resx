@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="text.Text" xml:space="preserve">
+    <value>      Структура алгоритма:
+
+      Алгоритм Serpent представляет собой SP-сеть, в которой весь блок данных длиной 128 бит на каждом раунде разбивается на 4 слова длиной по 32 бита. 
+Все значения, использующиеся при шифровании, представляются битовыми потоками. 
+
+Serpent шифрует открытый текст P длиной 128 бит в шифротекст C длиной так же 128 бит за 32 раунда с помощью 33 подключей K0,...K32 длиной 128 бит. Длина используемого ключа может принимать различные значения, но для конкретики зафиксируем их длину в 128, 192 или 256 бит. Короткие ключи длиной менее 256 бит дополняются до полной длины в 256 бит.
+
+Шифрование состоит из следующих основных шагов:
+
+1) начальная перестановка;
+2) 32 раунда, каждый из которых состоит из операции смешивания с 128-битным ключом (побитовое логическое исключающее «или»), табличная замена (S-box) и линейное преобразование. В последнем раунде линейное преобразование заменяется дополнительным наложением ключа;
+3) конечная перестановка;
+
+Начальная и конечная перестановки не имеют какой-либо криптографической значимости. Они используются для упрощения оптимизированной реализации алгоритма и повышения вычислительной эффективности.
+
+Функция раунда весьма проста. Перечислим ее действия:
+1. Наложение 128-битного ключа раунда побитовой логической операцией
+исключающее «или» (XOR).
+2. Табличная замена. Обрабатываемый 128-битный блок данных разбивается
+на 32 фрагмента по 4 бита, над каждым из которых выполняется табличная замена 4 × 4 битов. Полученный результат объединяется обратно в 128-битный блок. В каждом раунде используется одна и та же таблица; всего же в алгоритме определены 8 таблиц замен S0...S7, которые циклически используются в 32 раундах шифрования. Ячейки таблицы содержат выходные значения; входное значение определяет требуемый номер столбца. 
+3. Линейное преобразование блока данных. Каждая ячейка таблицы соответствует биту выходного значения (от 0 до 127); в ячейке перечислены входные биты, применение к которым операции XOR дает выходное значение.
+Последний раунд отличается от предыдущих тем, что вместо линейного преобразования в нем выполняется дополнительное наложение ключа; здесь используется 33-й фрагмент расширенного ключа K32.
+
+Дешифрование:
+Расшифровывание производится выполнением обратных операций в обратной последовательности. В частности, вместо таблиц замен S0...S7 применяются в обратной последовательности инверсные таблицы замен. Аналогичным образом вместо «прямого» линейного преобразования используется обратное.
+
+Процедура расширения ключа:
+Согласно требованиям конкурса AES, алгоритм SERPENT поддерживает три размера ключа шифрования: 128, 192 и 256 битов. Однако фактически ключ алгоритма SERPENT может иметь произвольный размер, меньший 256. Такой «неполный» ключ перед выполнением его расширения дополняется по следующему правилу:
+1. Ключ дополняется одним единичным битом справа.
+2. Затем ключ дополняется справа нулевыми битами до достижения 256-
+битного размера.
+
+Только после этого производится процедура расширения ключа, состоящая
+из следующих шагов: 
+1. 256-битный дополненный (при необходимости) ключ шифрования представляется в виде 8 32-битных слов, обозначаемых w0...w7
+2. Эти слова используются в качестве исходных значений для вычисления промежуточного ключа — последовательности w8...w139:
+wi=(w(i-8) ⊕ w(i-5) ⊕ w(i-3) ⊕ w(i-1) ⊕ φ ⊕ w(i-8)) &lt;&lt;&lt; 11,
+где φ — округленная дробная часть золотого сечения, т. е. 9E3779B9 в шестнадцатеричной записи.
+3. Вычисляются ключи раундов с использованием таблиц замен S0...S7 (аналогично описанному выше их использованию в алгоритме SERPENT):
+K0 = S3(w8,w9,w10,w11);
+K1 = S4(w12,w13,w14,w15);
+K2 = S5(w16,w17,w18,w19);
+...
+K32 = S3(w136,w137,w138,w139).
+
+Из полученных таким образом ключей Kj и формируются 128-битные ключи Ki для каждого цикла алгоритма: Ki = IP(Kj) 
+
+
+Приложение разработано студенткой группы БИСТ-21-3 Харлашкиной Анной Вадимовной</value>
+  </data>
+</root>
